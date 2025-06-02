@@ -1,0 +1,115 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(130deg, rgb(40, 40, 40), rgb(10,10, 10));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.calculadora {
+  background: #bdbcbc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+  width: 300px;
+  padding: 20px;
+}
+
+
+.tela {
+  background: #272b30;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+
+.botoes {
+  background: #000000;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 botões por linha */
+  gap: 10px;
+}
+
+
+.btn {
+  background: #353030;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 15px;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #d0d0d0;
+}
+
+.btn:active {
+  background: #c0c0c0;
+}
+
+[data-acao="porcentagem"] {
+  background: #353030;
+  color: #4caf50;
+}
+
+[data-acao="raiz"] {
+  background: #353030;
+  color: #4caf50;
+}
+
+[data-acao="dividir"] {
+  background: #353030;
+  color: #4caf50;
+}
+
+[data-acao="multiplicar"] {
+  background: #353030;
+  color: #4caf50;
+}
+
+[data-acao="subtrair"] {
+  background: #353030;
+  color: #4caf50;
+}
+
+[data-acao="somar"] {
+  background: #353030;
+  color: #4caf50;
+}
+
+[data-acao="limpar"] {
+  background: #353030;
+  color: #f16161;
+}
+
+[data-acao="limpar"]:hover {
+  background: #ff4d4d;
+}
+
+[data-acao="igual"] {
+  background: #4caf50;
+  color: #fff;
+}
+
+[data-acao="igual"]:hover {
+  background: #45a049;
+}
